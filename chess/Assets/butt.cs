@@ -22,8 +22,10 @@ public class butt : MonoBehaviour
     public const string KNIGHT_NAME = "knight";
     public Text conditionText;
     public Text timeText;
+    public GameObject rightTurn, leftTurn, bottomTurn;
     float Timer;
-
+    public int turn_count = -1;
+    int turn;
     private string whoIs = null;
     bool isSecondClick= false;
 
@@ -45,7 +47,7 @@ public class butt : MonoBehaviour
         /********************/
 
         /********** sample of above initialization **********/
-         print(
+        /* print(
              condition_matrix[1, 1] + "   " + 
              condition_matrix[1, 2] + "   " +
              condition_matrix[1, 5] + "   " +
@@ -54,7 +56,7 @@ public class butt : MonoBehaviour
              condition_matrix[24, 2] + "   " +
              condition_matrix[24, 3] + "   " 
              );
-             
+          */   
         /********************/
 
     }
@@ -81,10 +83,12 @@ public class butt : MonoBehaviour
             {
                 print("isSecondClick");
                 isSecondClick = false;
-                print(x.transform.name.ToString());
+                //print(x.transform.name.ToString());
+
+                
             }
 
-
+            turn_count++;
             isSecondClick = true;
 
             if (whoIs == SOLDIRE_NAME)
@@ -213,6 +217,26 @@ public class butt : MonoBehaviour
             s = nameX.Split('_');
             //print(s.ToString());
             print("firstClick");
+        }
+
+        turn = turn_count % 3;
+        switch (turn)
+        {
+            case 0:
+                leftTurn.SetActive(true);
+                rightTurn.SetActive(false);
+                bottomTurn.SetActive(false);
+                break;
+            case 1:
+                leftTurn.SetActive(false);
+                rightTurn.SetActive(true);
+                bottomTurn.SetActive(false);
+                break;
+            case 2:
+                leftTurn.SetActive(false);
+                rightTurn.SetActive(false);
+                bottomTurn.SetActive(true);
+                break;
         }
     }
 

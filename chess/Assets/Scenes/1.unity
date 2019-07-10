@@ -276,6 +276,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &23284340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +419,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &39441797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,6 +562,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &45537752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +705,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &71202686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +987,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &82372021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,6 +1130,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &94682132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,6 +1273,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &114254614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1417,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &117525720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1629,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &118585115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,6 +1842,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &148251426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,6 +2051,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &173387049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2151,6 +2195,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &179229176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2359,6 +2407,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &223109599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2567,6 +2619,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &238585187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2844,6 +2900,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &271031289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,6 +3113,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &275040100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3267,6 +3331,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &338127059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,6 +3474,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &363697227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,6 +3617,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &367438439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3597,6 +3673,75 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &368332646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368332647}
+  - component: {fileID: 368332649}
+  - component: {fileID: 368332648}
+  m_Layer: 5
+  m_Name: bottomTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &368332647
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368332646}
+  m_LocalRotation: {x: -0, y: 0, z: -0.9238796, w: -0.38268328}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 714859565}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -225}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -17, y: -331}
+  m_SizeDelta: {x: 617.9, y: 615.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &368332648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368332646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b7179570eb0d9e449a65c15601f74c51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &368332649
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368332646}
+  m_CullTransparentMesh: 0
 --- !u!1 &368621246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,6 +3829,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &368621251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3823,6 +3972,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &379516667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,6 +4184,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &388798714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4171,6 +4328,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &395439998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4310,6 +4471,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &395588691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4449,6 +4614,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &398614858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4658,6 +4827,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &419747992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4882,6 +5055,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &433162449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5021,6 +5198,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &451149192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5160,6 +5341,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &453457323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5299,6 +5484,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &483133609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5439,6 +5628,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &484801996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5578,6 +5771,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &510509468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5728,6 +5925,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &512732907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6101,6 +6302,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &538553612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6309,6 +6514,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &550719661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6518,6 +6727,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &566235877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6726,6 +6939,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &620373713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6866,6 +7083,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &628367591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6971,6 +7192,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &644010950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7144,6 +7369,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &652527456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7284,6 +7513,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &671368157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7423,6 +7656,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &676020693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7631,6 +7868,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &709652460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7770,6 +8011,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &712134927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7909,6 +8154,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &714686439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7992,6 +8241,9 @@ RectTransform:
   - {fileID: 1101873582}
   - {fileID: 1777746826}
   - {fileID: 644010948}
+  - {fileID: 962176855}
+  - {fileID: 368332647}
+  - {fileID: 1513539547}
   m_Father: {fileID: 1539422145}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8012,7 +8264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8122,6 +8374,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &717456554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8262,6 +8518,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &720328327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8401,6 +8661,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &728778180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8609,6 +8873,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &738919573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8748,6 +9016,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &739640208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8957,6 +9229,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &751359826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9096,6 +9372,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &754246095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9235,6 +9515,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &788155198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9374,6 +9658,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &805135595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9514,6 +9802,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &851487735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9653,6 +9945,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &862002935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9862,6 +10158,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &894512027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10001,6 +10301,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &902717301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10209,6 +10513,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &938222340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10349,6 +10657,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &938890419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10470,6 +10782,75 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950294875}
+  m_CullTransparentMesh: 0
+--- !u!1 &962176854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962176855}
+  - component: {fileID: 962176857}
+  - component: {fileID: 962176856}
+  m_Layer: 5
+  m_Name: RightTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &962176855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962176854}
+  m_LocalRotation: {x: -0, y: -0, z: -0.91378045, w: 0.40620846}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 714859565}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -132.06601}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 412.42, y: 219.59}
+  m_SizeDelta: {x: 773.53, y: 729.93}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &962176856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962176854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b7179570eb0d9e449a65c15601f74c51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &962176857
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962176854}
   m_CullTransparentMesh: 0
 --- !u!1 &977997691
 GameObject:
@@ -10627,6 +11008,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &996050752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10766,6 +11151,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1003777129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10905,6 +11294,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1015785072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11045,6 +11438,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1023177275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11185,6 +11582,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1040105781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11393,6 +11794,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1059705735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11532,6 +11937,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1066739946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11672,6 +12081,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1067436526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11777,6 +12190,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1101873584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11985,6 +12402,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1127162040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12159,6 +12580,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1130801785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12298,6 +12723,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1139515235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12437,6 +12866,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1143707312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12576,6 +13009,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1143957126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12715,6 +13152,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1156743978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12855,6 +13296,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1158778289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12994,6 +13439,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1161482359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13133,6 +13582,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1162452190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13272,6 +13725,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1175839733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13687,6 +14144,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1197683662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13826,6 +14287,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1200430323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13966,6 +14431,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1207833483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,6 +14575,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1236593636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14246,6 +14719,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1262167080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14385,6 +14862,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1274924571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14524,6 +15005,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1277339634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14663,6 +15148,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1285207835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14872,6 +15361,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1314822071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15097,6 +15590,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1334249437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15306,6 +15803,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1367084412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15514,6 +16015,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1389394804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15653,6 +16158,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1396391924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15792,6 +16301,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1409751015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16000,6 +16513,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1432814495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16139,6 +16656,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1438314373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16278,6 +16799,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1446105075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16417,6 +16942,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1461832356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16625,6 +17154,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1476904136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16834,6 +17367,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1492902126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16974,6 +17511,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1499155005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17182,6 +17723,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1500364394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17459,6 +18004,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1502491841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17511,6 +18060,75 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1513539546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513539547}
+  - component: {fileID: 1513539549}
+  - component: {fileID: 1513539548}
+  m_Layer: 5
+  m_Name: leftTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1513539547
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1513539546}
+  m_LocalRotation: {x: -0, y: -0, z: -0.29108053, w: -0.95669854}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1}
+  m_Children: []
+  m_Father: {fileID: 714859565}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -326.155}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -442.47, y: 281.65}
+  m_SizeDelta: {x: 731.14, y: 885}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1513539548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1513539546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b7179570eb0d9e449a65c15601f74c51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1513539549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1513539546}
+  m_CullTransparentMesh: 0
 --- !u!1 &1518414045
 GameObject:
   m_ObjectHideFlags: 0
@@ -17841,6 +18459,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1552064435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18049,6 +18671,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1558033247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18320,6 +18946,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1569152607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18460,6 +19090,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1574639941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18599,6 +19233,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1589047599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18739,6 +19377,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1610165353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18947,6 +19589,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1614572890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19086,6 +19732,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1616491597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19226,6 +19876,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1646471158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19434,6 +20088,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1654282575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19642,6 +20300,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1681124023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19781,6 +20443,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1685990963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19921,6 +20587,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1710319014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20061,6 +20731,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1714826355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20270,6 +20944,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1725433506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20410,6 +21088,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1727688520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20549,6 +21231,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1729707761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20723,6 +21409,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1777746828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20896,6 +21586,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1781273657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21174,6 +21868,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1807014116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21314,6 +22012,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1811536288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21454,6 +22156,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1812916790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21593,6 +22299,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1827758552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21732,6 +22442,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1837738507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21872,6 +22586,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1842190024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22011,6 +22729,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1857688484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22151,6 +22873,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1864666777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22525,6 +23251,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1879353604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22735,6 +23465,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1883320630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22874,6 +23608,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1885918237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23014,6 +23752,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1893341603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23153,6 +23895,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1908230419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23292,6 +24038,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1917656029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23431,6 +24181,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1921696452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23570,6 +24324,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1927911687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23778,6 +24536,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1978350823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23917,6 +24679,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &1998476331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24075,6 +24841,10 @@ MonoBehaviour:
   - 
   conditionText: {fileID: 1524086529}
   timeText: {fileID: 329248747}
+  rightTurn: {fileID: 962176854}
+  leftTurn: {fileID: 1513539546}
+  bottomTurn: {fileID: 368332646}
+  turn_count: 0
 --- !u!1 &2020672129
 GameObject:
   m_ObjectHideFlags: 0
@@ -24162,6 +24932,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2020672134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24302,6 +25076,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2051060567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24441,6 +25219,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2062105394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24580,6 +25362,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2079086576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24719,6 +25505,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2083033147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25097,6 +25887,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2114237183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25236,6 +26030,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2126131131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25444,6 +26242,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2137209957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25583,6 +26385,10 @@ MonoBehaviour:
   s: []
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
+  rightTurn: {fileID: 0}
+  leftTurn: {fileID: 0}
+  bottomTurn: {fileID: 0}
+  turn_count: 0
 --- !u!114 &2137798728
 MonoBehaviour:
   m_ObjectHideFlags: 0
