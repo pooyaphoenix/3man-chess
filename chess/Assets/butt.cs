@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class butt : MonoBehaviour
 {
+    int[,] condition_matrix = new int[25, 7];
+
 
     public Transform nowObject;
     public Transform pastX;
@@ -29,17 +31,37 @@ public class butt : MonoBehaviour
     void Start()
     {
 
-    }
+        /***** condition_matrix init for first postion of plyers when game for first time running ******/
+            for (int i = 1; i <= 24; i++)
+            {
+                for(int j=1; j<=6; j++) { 
+                if (j==1 || j == 2)   
+                    condition_matrix[i, j] = 1;
+                else
+                    condition_matrix[i, j] = 0;
+                }
+            }
 
+        /********************/
+
+        /********** sample of above initialization **********/
+         print(
+             condition_matrix[1, 1] + "   " + 
+             condition_matrix[1, 2] + "   " +
+             condition_matrix[1, 5] + "   " +
+
+             condition_matrix[24, 1] + "   " +
+             condition_matrix[24, 2] + "   " +
+             condition_matrix[24, 3] + "   " 
+             );
+             
+        /********************/
+
+    }
     // Update is called once per frame
     void Update()
     {
-        /*if(nowObject!=null){
-			print(nowObject);
-		}*/
-
-      //  Timer += Time.deltaTime;
-       // timeText.text = Timer.ToString();
+      
 
     }
 
@@ -230,8 +252,13 @@ public class butt : MonoBehaviour
     }
     Boolean checkCastleMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
     {
+        print("x1:" + x1 + " y1:" + y1 + " x2:" + x2 + " y2:" + y2);
         if (Math.Abs(x1 - x2) % 12 == 0 || (y1 == y2))
+        {
+            
             return true;
+
+        }
         else
             return false;
 
