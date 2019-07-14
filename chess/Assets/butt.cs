@@ -82,7 +82,7 @@ public class butt : MonoBehaviour
     public int turn_count = -1;
     int turn;
     private string whoIs = null;
-    bool isSecondClick = false;
+    bool isSecondClick= false;
 
     // Use this for initialization
     void Start()
@@ -92,7 +92,7 @@ public class butt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      
 
     }
 
@@ -101,7 +101,7 @@ public class butt : MonoBehaviour
 
         /** we have two position (1_2) : first position => 1 , second position => 2 **/
         /** for pawn **/
-
+       
         if ((x.transform.childCount == 0))
         {
 
@@ -111,7 +111,7 @@ public class butt : MonoBehaviour
                 isSecondClick = false;
                 //print(x.transform.name.ToString());
 
-
+                
             }
 
             turn_count++;
@@ -122,7 +122,7 @@ public class butt : MonoBehaviour
             int x1 = Int32.Parse(goal_position.Split('_')[0]);
             int y1 = Int32.Parse(goal_position.Split('_')[1]);
             int x2 = Int32.Parse(current_position.Split('_')[0]);
-            int y2 = Int32.Parse(current_position.Split('_')[1]);
+            int y2 = Int32.Parse(current_position.Split('_')[1]);  
 
 
             if (whoIs == SOLDIRE_NAME)
@@ -133,12 +133,12 @@ public class butt : MonoBehaviour
                 if (((x1 - x2) == 0 || (x1 - x2) == 12))
                     switch (y1 - y2)/** parent first position - child **/
                     {
-
+                        
                         case (1):
                             conditionText.text = ("PAWN MOVED").ToString();
-
+                                
                             condition_matrix[x1, y1] = "1";
-                            print(goal_position + ": updated"); print(condition_matrix[x1, y1]);
+                            print(goal_position + ": updated");print(condition_matrix[x1, y1]);
                             condition_matrix[x2, y2] = NO_DIE;
                             print(current_position + ": updated"); print(condition_matrix[x2, y2]);
                             doMove(x);
@@ -157,7 +157,7 @@ public class butt : MonoBehaviour
                                     print(current_position + ": updated");
                                     doMove(x);
                                 }
-
+                                    
                                 else
                                     print("You cant move");// حرکت اول اگر جلوی سرباز مهره خودی یا غیر خودی باشد نمیتواند جلو برود
 
@@ -179,7 +179,7 @@ public class butt : MonoBehaviour
                             break;
                         case (-1):
                             conditionText.text = ("WRONG").ToString();
-                            // print("-1");
+                           // print("-1");
                             conditionText.color = Color.red;
                             break;
                         default:
@@ -195,7 +195,7 @@ public class butt : MonoBehaviour
             {
 
                 //اینجوری تغییر داده شده، اگر دیدی پاک کن =>Int32.Parse(x.transform.name.Split('_')[0]), Int32.Parse(x.transform.name.Split('_')[1]), Int32.Parse(s[0]), Int32.Parse(s[1]))
-                if (checkCastleMove2(x.transform.name, current_position))
+                if (checkCastleMove2(x.transform.name,current_position))
                 {
                     conditionText.text = ("CASTLE MOVED").ToString();
 
@@ -207,9 +207,9 @@ public class butt : MonoBehaviour
                     conditionText.text = ("WRONG").ToString();
                     conditionText.color = Color.red;
                 }
-            }
+                }
 
-            else if (whoIs == KNIGHT_NAME)
+            else if (whoIs == KNIGHT_NAME) 
             {
                 if (checkKnightMove(Int32.Parse(x.transform.name.Split('_')[0]), Int32.Parse(x.transform.name.Split('_')[1]), Int32.Parse(s[0]), Int32.Parse(s[1])))
                 {
@@ -233,7 +233,7 @@ public class butt : MonoBehaviour
             {
                 if (Math.Abs(Int32.Parse(x.transform.name.Split('_')[0]) - Int32.Parse(s[0])) % 23 <= 1 && Math.Abs(Int32.Parse(x.transform.name.Split('_')[1]) - Int32.Parse(s[1])) % 23 <= 1)
                 {
-                    conditionText.text = ("KING MOVED").ToString();
+                     conditionText.text = ("KING MOVED").ToString();
 
                     doMove(x);
 
@@ -243,10 +243,10 @@ public class butt : MonoBehaviour
                     conditionText.text = ("WRONG").ToString();
                     conditionText.color = Color.red;
                 }
-            }
+              }
             else if (whoIs == BISHOP_NAME)
             {
-                if (checkBishopMove2(x.transform.name, current_position))
+                if (checkBishopMove2(x.transform.name,current_position))
                 {
 
 
@@ -265,7 +265,7 @@ public class butt : MonoBehaviour
                     conditionText.text = ("WRONG").ToString();
                     conditionText.color = Color.red;
                 }
-            }
+              }
 
             else if (whoIs == QUEEN_NAME)
             {
@@ -334,7 +334,7 @@ public class butt : MonoBehaviour
 
 
 
-
+        
     Boolean checkCastleMove2(string goal_position, string current)
     {
         int x1 = Int32.Parse(goal_position.Split('_')[0]);
@@ -350,9 +350,9 @@ public class butt : MonoBehaviour
 
 
 
-        print("17_1:" + condition_matrix[17, 1]);
-        print("17_2:" + condition_matrix[17, 2]);
-        print("17_3:" + condition_matrix[17, 3]);
+        print("17_1:"+condition_matrix[17, 1]);
+        print("17_2:"+condition_matrix[17, 2]);
+        print("17_3:"+condition_matrix[17, 3]);
 
 
 
@@ -363,7 +363,7 @@ public class butt : MonoBehaviour
             return true;
         }
         else if (Math.Abs(x1 - x2) % 12 == 0) // یعنی اگر حرکت در قطر دایره باشد
-        {
+        { 
             print("qotr");
             if (y1 < y2)
             {
@@ -376,8 +376,8 @@ public class butt : MonoBehaviour
                         condition_matrix[x2, y2] = NO_DIE;
                         return true;
                     }
-
-
+                        
+                    
                     else
                         return false;
                 }
@@ -386,11 +386,11 @@ public class butt : MonoBehaviour
             }
             else if (y2 < y1)
             {
-                print("y2: " + y2);
+                print("y2: "+ y2);
 
 
 
-                for (int i = y2 + 1; i < y1; i++)
+                for (int i = y2 + 1; i < y1;i++)
                 {
                     if (condition_matrix[x1, i] == NO_DIE)
                     {
@@ -483,9 +483,9 @@ public class butt : MonoBehaviour
                 {
                     print("wrong");
                     return false;
-                }
+                 }
 
-                if (Math.Abs(pos1 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1) > Math.Abs(pos2 - x1))
+                if (Math.Abs(pos1 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1)> Math.Abs(pos2 - x1))
                 {
                     print("there");
                     return (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, false) && BishipCheckHomesForDieInNormalMove(pos1, y2, x1, y1, true));
@@ -495,11 +495,18 @@ public class butt : MonoBehaviour
                     print("here");
                     return (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, false) && BishipCheckHomesForDieInNormalMove(pos2, y2, x1, y1, true));
                 }
+                else if (pos1 == x2 || pos2 == x2)
+                {
+                    print("place C");
+                    return (BishipCheckHomesForDieInNormalMove(x2, y2, x1, y1, true));
+                }
                 else
                 {
-                    print("you cant move");
+                    print("place D");
+
                     return false;
                 }
+
 
             }
         }
@@ -512,7 +519,7 @@ public class butt : MonoBehaviour
         if (chinaWallFlag)
         {
 
-            if (now_x < goal_x)
+            if (now_x < goal_x && now_y > goal_y)
             {
 
 
@@ -537,7 +544,7 @@ public class butt : MonoBehaviour
                 } while (i != goal_x - 1 && j != 0);
                 return true;
             }
-            else if (now_x > goal_x)
+            else if (now_x > goal_x && now_y > goal_y)
             {
                 if (now_x == 24) now_x = 0;
                 for (int i = now_x + 1, j = now_y - 1; i != goal_x + 1 && j != 0; j--)
@@ -554,6 +561,16 @@ public class butt : MonoBehaviour
                     }
                     i++;
                 }
+                return true;
+            }
+            else if (now_x < goal_x && now_y > goal_y)
+            {
+                print("updating soon ...");
+                return true;
+            }
+            else if (now_x < goal_x && now_y < goal_y)
+            {
+                print("updating soon ...");
                 return true;
             }
             else
@@ -629,7 +646,7 @@ public class butt : MonoBehaviour
 
 
 
-    Boolean checkBishopMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
+        Boolean checkBishopMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
     {
         int pos1, pos2, def;
         if (Math.Abs(x1 - x2) == Math.Abs(y1 - y2))
@@ -665,7 +682,7 @@ public class butt : MonoBehaviour
 
         return false;
     }
-
+    
     Boolean checkCastleMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
     {
         /* 
@@ -674,7 +691,7 @@ public class butt : MonoBehaviour
          * */
 
         if (Math.Abs(x1 - x2) % 12 == 0 || (y1 == y2))
-        {
+        {          
             return true;
         }
         else
@@ -682,7 +699,7 @@ public class butt : MonoBehaviour
 
     }
 
-
+    
 
     Boolean checkKnightMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
     {
@@ -725,7 +742,7 @@ public class butt : MonoBehaviour
         nowObject.transform.localRotation = Quaternion.Euler(0, 0, 0);
         nowObject.transform.Rotate(0f, 0f, -7f, Space.World);
     }
-
-
+    
+		
 
 }
