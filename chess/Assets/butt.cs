@@ -87,8 +87,7 @@ public class butt : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        print(
-            "21_3" + condition_matrix[21, 3]);
+
     }
     // Update is called once per frame
     void Update()
@@ -429,110 +428,197 @@ public class butt : MonoBehaviour
         int y2 = Int32.Parse(current_position.Split('_')[1]);
         print(current_position + "->" + goal_position);
 
-        /* 
-         * first and second arguments are goal position (x1,y1) => (17_1)
-         * second and third arguments are current position (x2,y2) => (17_4)
-         * */
-
-
-
-        int pos1, pos2, def;
         if (Math.Abs(x1 - x2) == Math.Abs(y1 - y2))
         {
-            condition_matrix[x1, y1] = "1"; // فعلا 1 میگذاریم
-            condition_matrix[x2, y2] = NO_DIE;
+            return BishipCheckHomesForDieInNormalMove(x2, y2, x1, y1, false);
+        }
+        else
+        {
+            bool chinaWallFlag = false;
+            bool chinaWallFlagInFirst = false;
+            bool chinaWallFlagInSecond = false;
+
+            if (x2 >= 15 && x1 <= 5 || x2 <= 10 && x1 >= 20)
+                chinaWallFlagInSecond = true;
 
 
-            print("bishop :: " + current_position + "->" + goal_position);
 
-            int xLow, xHigh, yLow, yHigh;
-            // می خواهیم ضربدری مسیر را چک کنیم
-            if (x1 > x2) { xLow = x2; xHigh = x1; } else { xLow = x1; xHigh = x2; }
-            if (y1 > y2) { yLow = y2; yHigh = y1; } else { yLow = y1; yHigh = y2; }
+            int diff = y2 - 1;
+            int pos1 = x2 + diff; if (pos1 >= 25) { pos1 -= 24; chinaWallFlagInFirst = true; }
+            int pos2 = x2 - diff; if (pos2 <= 0) { pos2 += 24; chinaWallFlagInFirst = true; }
 
-            // print("x low -> x high: "+xLow + "->" + xHigh);
-            //print(yLow + "_" + yHigh);
 
-            for (int i = xLow + 1, j = yLow + 1; i < xHigh; i++, j++)
+
+            if (Math.Abs(x1 - pos1) == Math.Abs(y1 - 1))
             {
-                if (condition_matrix[i, j] == NO_DIE)
-                {
-                    print("no die in => " + i + "_" + j);
-                }
-
+                print("pos1: " + pos1);
+                if (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos1, 1, x1, y1, false))
+                    return true;
                 else
                 {
-                    print("founded a die in => " + i + "_" + j);
+                    print("way has a die");
+                    return false;
+                }
+            }
+            else if (Math.Abs(x1 - pos2) == Math.Abs(y1 - 1))
+            {
+                print("pos2: " + pos2);
+                if (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos2, 1, x1, y1, false))
+                    return true;
+                else
+                {
+                    print("way has a die");
+                    return false;
+                }
+            }
+            else
+            {
+
+
+                int temp1 = Math.Abs(pos1 - x1), temp2 = Math.Abs(pos2 - x1);
+                if (temp2 >= 19) { chinaWallFlagInSecond = true; temp2 = 24 % temp2; }
+                if (temp1 >= 19) { chinaWallFlagInSecond = true; temp1 = 24 % temp1; }
+
+                if (temp2 != Math.Abs(1 - y1) || temp2 != Math.Abs(1 - y1))
+                {
+                    print("wrong");
+                    return false;
+                }
+
+                if (Math.Abs(pos1 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1) > Math.Abs(pos2 - x1))
+                {
+                    print("there");
+                    return (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, false) && BishipCheckHomesForDieInNormalMove(pos1, y2, x1, y1, true));
+                }
+                else if (Math.Abs(pos2 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1) < Math.Abs(pos2 - x1))
+                {
+                    print("here");
+                    return (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, false) && BishipCheckHomesForDieInNormalMove(pos2, y2, x1, y1, true));
+                }
+                else
+                {
+                    print("you cant move");
                     return false;
                 }
 
             }
-            print("here");
-            return true;
-        }
-        else
-        {
-
-            // go to first layer and check
-            //راه حل دیوار چین
-            def = y2 - 1;
-
-            pos1 = x2 + def; if (pos1 > 25) pos1 -= 24;
-            pos2 = x2 - def; if (pos2 <= 0) pos2 += 24;
-
-            int temp1 = temp1 = Math.Abs(pos1 - x1), temp2 = Math.Abs(pos2 - x1);
-            if (temp2 >= 20) temp2 = 24 % temp2;
-            if (temp1 >= 20) temp1 = 24 % temp1;
-
-
-            int xLow, xHigh, yLow, yHigh;
-            // می خواهیم ضربدری مسیر را چک کنیم
-            if (pos2 > x1) { yLow = y2; yHigh = y1; } else { yLow = y1; yHigh = y2; }
-
-            //pos1_1 //pos2_1
-            if (temp1 == Math.Abs(1 - y1))
-            {
-
-                if (pos1 > x1) { xLow = x1; xHigh = pos1; } else { xLow = pos1; xHigh = x1; }
-
-
-                int i = xLow;
-                for (int j = 1; i < xHigh; j++, i++)
-                {
-                    if (condition_matrix[i, j] == NO_DIE)
-                    {
-                        print("bis :: die not in: " + i + "_" + j);
-                        return true;
-                    }
-                    else
-                    {
-                        print("bis :: die found in: " + i + "_" + j);
-                    }
-
-                }
-                return true;
-            }
-            else if (temp2 == Math.Abs(1 - y1))
-            {
-                condition_matrix[x1, y1] = "1"; // فعلا 1 میگذاریم
-                condition_matrix[x2, y2] = NO_DIE;
-
-                return true;
-            }
-            else
-            {
-                print("false");
-                return false;
-            }
-
-
         }
     }
 
+    Boolean BishipCheckHomesForDieInNormalMove(int now_x, int now_y, int goal_x, int goal_y, bool chinaWallFlag)
+    {
 
 
+        if (chinaWallFlag)
+        {
+
+            if (now_x < goal_x)
+            {
 
 
+                int i = now_x - 1, j = now_y - 1;
+
+                do
+                {
+                    condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[i, j] = NO_DIE;
+
+                    print("available1 => " + i + "__" + j);
+                    if (i == 1)
+                    {
+                        j--;
+                        print("available1 => " + 24 + "__" + j);
+                        i = 24;
+
+                    }
+
+                    i--; j--;
+
+                } while (i != goal_x - 1 && j != 0);
+                return true;
+            }
+            else if (now_x > goal_x)
+            {
+                if (now_x == 24) now_x = 0;
+                for (int i = now_x + 1, j = now_y - 1; i != goal_x + 1 && j != 0; j--)
+                {
+
+                    condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[i, j] = NO_DIE;
+                    print("available2: " + i + "__" + j);/***/
+                    if (i == 24)
+                    {
+                        j--;
+                        print("available2: " + 1 + "__" + j);/***/
+                        i = 0;
+                    }
+                    i++;
+                }
+                return true;
+            }
+            else
+                return false;
+        }
+        else
+        {
+            if (goal_x > now_x && goal_y > now_y)
+            {
+                //درست
+                for (int i = now_x + 1, j = now_y + 1; i <= goal_x; j++, i++)
+                {
+                    condition_matrix[goal_x, goal_y] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[now_x, now_y] = NO_DIE;
+
+                    print("available3: " + i + "__" + j);
+                }
+                return true;
+            }
+            else if (goal_x < now_x && goal_y < now_y)
+            {
+                //درست
+                for (int i = now_x - 1, j = now_y - 1; i >= goal_x; j--, i--)
+                {
+                    condition_matrix[goal_x, goal_y] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[now_x, now_y] = NO_DIE;
+
+                    print("available3: " + i + "__" + j);
+                }
+                return true;
+
+            }
+            else if (goal_x < now_x && goal_y > now_y)
+            {
+                // درست
+                for (int i = now_x - 1, j = now_y + 1; i >= goal_x; j++, i--)
+                {
+                    condition_matrix[goal_x, goal_y] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[now_x, now_y] = NO_DIE;
+
+                    print("available4: " + i + "__" + j);
+                }
+                return true;
+            }
+            else if (goal_x > now_x && goal_y < now_y)
+            {
+                // درست
+                for (int i = now_x + 1, j = now_y - 1; i <= goal_x; j--, i++)
+                {
+                    condition_matrix[goal_x, goal_y] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[now_x, now_y] = NO_DIE;
+
+                    print("available5: " + i + "__" + j);
+                }
+                return true;
+            }
+
+            return false;
+        }
+    }
+
+    Boolean BishopCheckHomesForDieInChinaWallMove(int now_x, int now_y, int goal_x, int goal_y)
+    {
+        return false;
+    }
 
 
 
