@@ -434,7 +434,8 @@ public class butt : MonoBehaviour
         }
         else
         {
-            bool chinaWallFlag = false;
+            bool chinaWallFlag = false, pos1Flag = false, pos2Flag = false;
+
             bool chinaWallFlagInFirst = false;
             bool chinaWallFlagInSecond = false;
 
@@ -444,17 +445,17 @@ public class butt : MonoBehaviour
 
 
             int diff = y2 - 1;
-            int pos1 = x2 + diff; if (pos1 >= 25) { pos1 -= 24; chinaWallFlagInFirst = true; }
-            int pos2 = x2 - diff; if (pos2 <= 0) { pos2 += 24; chinaWallFlagInFirst = true; }
+            int pos1 = x2 + diff; if (pos1 >= 25) { pos1 -= 24; chinaWallFlagInFirst = true; pos1Flag = true; }
+            int pos2 = x2 - diff; if (pos2 <= 0) { pos2 += 24; chinaWallFlagInFirst = true; pos2Flag = true; }
 
 
 
             if (Math.Abs(x1 - pos1) == Math.Abs(y1 - 1))
             {
                 print("pos1: " + pos1);
-                if (chinaWallFlagInFirst)
+                if (pos1Flag)
                     return BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst);
-                else if (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos1, 1, x1, y1, false))
+                else if (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, pos1Flag) && BishipCheckHomesForDieInNormalMove(pos1, 1, x1, y1, false))
                     return true;
                 else
                 {
@@ -466,7 +467,7 @@ public class butt : MonoBehaviour
             {
                 print("pos2: " + pos2);
 
-                if (chinaWallFlagInFirst)
+                if (pos2Flag)
                     return BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst);
                 else if (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos2, 1, x1, y1, false))
                     return true;
