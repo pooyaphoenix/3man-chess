@@ -211,7 +211,7 @@ public class butt : MonoBehaviour
 
             else if (whoIs == KNIGHT_NAME) 
             {
-                if (checkKnightMove(Int32.Parse(x.transform.name.Split('_')[0]), Int32.Parse(x.transform.name.Split('_')[1]), Int32.Parse(s[0]), Int32.Parse(s[1])))
+                if (checkKnightMove2(current_position, goal_position))
                 {
                     conditionText.text = ("KNIGHT MOVED").ToString();
                     condition_matrix[x1, y1] = "1";
@@ -744,30 +744,228 @@ public class butt : MonoBehaviour
 
     }
 
-    
 
-    Boolean checkKnightMove(Int32 x1, Int32 y1, Int32 x2, Int32 y2)
+
+
+
+    Boolean checkKnightMove2(string current_position, string goal_position)
     {
 
-        if ((x1 + 2 == x2) && (y1 + 1 == y2) ||
-           (y1 + 2 == y2) && (x1 + 1 == x2) ||
-           (x1 + 2 == x2) && (y1 - 1 == y2) ||
-           (y1 + 2 == y2) && (Math.Abs(x1 - 1) == x2) ||
+        bool returnFlag = false;
+        int x1 = Int32.Parse(goal_position.Split('_')[0]);
+        int y1 = Int32.Parse(goal_position.Split('_')[1]);
+        int x2 = Int32.Parse(current_position.Split('_')[0]);
+        int y2 = Int32.Parse(current_position.Split('_')[1]);
+        print(current_position + " ---> " + goal_position);
 
-           (Math.Abs(x1 - 2) == x2) && (y1 - 1 == y2) ||
-           (y1 - 2 == y2) && (Math.Abs(x1 - 1) == x2) ||
-           (Math.Abs(x1 - 2) == x2) && (y1 + 1 == y2) ||
-           (y1 - 2 == y2) && (x1 + 1 == x2)
 
-           )
+        int nowX = x2, nowY = y2, goalX = x1, goalY = y1;
+
+        int tempX = nowX, tempY = nowY;
+
+
+        if (tempX + 2 >= 25)
         {
-            condition_matrix[x1, y1] = "1"; // فعلا 1 می گذاریم
-            condition_matrix[x2, y2] = NO_DIE;
-            return true;
+            print("**1**");
+
+            if (tempY == 5) { tempY--; tempX += 12; }
+            else if (tempY == 6) { tempY--; tempX += 12; }
+
+            print("available_1: " + Math.Abs(tempX - 24 + 2) + "_" + (tempY + 1));
+            if (goalX == Math.Abs(tempX - 24 + 2) && goalY == (tempY + 1))
+            {
+                returnFlag = true;
+            }
+            tempX = nowX; tempY = nowY;
+
+            if (tempY - 1 >= 1)
+                print("available_2: " + Math.Abs(tempX - 24 + 2) + "_" + (tempY - 1));
+
+            if (goalX == Math.Abs(tempX - 24 + 2) && goalY == (tempY - 1))
+            {
+                returnFlag = true;
+            }
+            tempY = nowY;
+        }
+        else
+        {
+
+            print("**2**");
+            if (tempY == 6) { tempY = 5; if (tempX < 12) tempX += 12; else if (tempX > 12) tempX -= 12; else tempX = 24; }
+
+            print("available_1: " + (tempX + 2) + "_" + (tempY + 1));
+            if (goalX == Math.Abs(tempX + 2) && goalY == (tempY + 1))
+            {
+                returnFlag = true;
+            }
+
+            tempY = nowY; tempX = nowX;
+
+            if (tempY - 1 >= 1)
+                print("available_2: " + (tempX + 2) + "_" + (tempY - 1));
+
+
+            if (goalX == Math.Abs(tempX + 2) && goalY == (tempY - 1))
+            {
+                returnFlag = true;
+            }
+
+            tempY = nowY;
         }
 
-        return false;
+        /**/
+
+        if (tempX - 2 <= 0)
+        {
+
+            print("**3**");
+            if (tempY == 6) { tempY = 5; if (tempX < 12) tempX += 12; else if (tempX > 12) tempX -= 12; else tempX = 24; }
+
+
+            print("available_3: " + (tempX + 24 - 2) + "_" + (tempY + 1));
+            if (goalX == (tempX + 24 - 2) && goalY == (tempY + 1))
+            {
+                returnFlag = true;
+            }
+            tempX = nowX; tempY = nowY;
+
+            if (tempY - 1 >= 1)
+                print("available_4: " + (tempX + 24 - 2) + "_" + (tempY - 1));
+
+
+            if (goalX == (tempX + 24 - 2) && goalY == (tempY - 1))
+            {
+                returnFlag = true;
+            }
+        }
+        else
+        {
+            print("**4**");
+
+
+            if ((tempX - 2) >= 1)
+            {
+                if (tempY == 5) { tempY--; tempX += 12; }
+                else if (tempY == 6) { tempY = 5; if (tempX < 12) tempX += 12; else if (tempX > 12) tempX -= 12; else tempX = 24; }
+
+                print("available_3: " + (tempX - 2) + "_" + (tempY + 1));
+                if (goalX == (tempX - 2) && goalY == (tempY + 1))
+                {
+                    returnFlag = true;
+                }
+                tempY = nowY; tempX = nowX;
+            }
+            if (tempY - 1 >= 1)
+                print("available_4: " + (tempX - 2) + "_" + (tempY - 1));
+
+            if (goalX == (tempX - 2) && goalY == (tempY - 1))
+            {
+                returnFlag = true;
+            }
+
+            tempY = nowY;
+        }
+
+
+        /**/
+        if (tempX + 1 >= 25)
+        {
+            print("**5**");
+
+            if (tempY == 5) { tempY--; tempX += 12; }
+            else if (tempY == 6) { tempY -= 2; tempX += 12; }
+
+            print("available_5: " + (tempX - 24 + 1) + "_" + (tempY + 2));
+            if (goalX == Math.Abs(tempX - 24 + 1) && goalY == (tempY + 2))
+            {
+                returnFlag = true;
+            }
+            tempY = nowY; tempX = nowX;
+
+            if ((tempY - 2) >= 1)
+                print("available_6: " + (tempX - 24 + 1) + "_" + (tempY - 2));
+
+
+            else if (goalX == Math.Abs(tempX - 24 + 1) && goalY == (tempY - 2))
+            {
+                returnFlag = true;
+            }
+
+
+        }
+        else
+        {
+            print("**6**");
+
+
+            if (tempY == 5) { tempY--; tempX += 12; }
+            else if (tempY == 6) { tempY = 3; if (tempX < 12) tempX += 12 - 1; else if (tempX > 12) tempX = 12 - 1; else tempX = 24 - 1; }
+
+
+            print("available_5: " + (tempX + 1) + "_" + (tempY + 2));
+            if (goalX == Math.Abs(tempX + 1) && goalY == (tempY + 2))
+            {
+                returnFlag = true;
+            }
+            tempY = nowY; tempX = nowX;
+
+            if ((tempY - 2) >= 1)
+                print("available_6: " + (tempX + 1) + "_" + (tempY - 2));
+
+
+            if (goalX == Math.Abs(tempX + 1) && goalY == (tempY - 2))
+            {
+                returnFlag = true;
+            }
+        }
+
+
+        /***/
+        print("**7**");
+
+
+
+        if (tempY == 5) { tempY--; tempX += 12; }
+        else if (tempY == 6) { tempY = 3; if (tempX < 12) tempX += 12 - 1; else if (tempX > 12) tempX = 12 - 1; else tempX = 24 - 1; }
+
+        print("available_7: " + (tempX - 1) + "_" + (tempY + 2));
+        if (goalX == Math.Abs(tempX - 1) && goalY == (tempY + 2))
+        {
+            returnFlag = true;
+        }
+
+        tempY = nowY; tempX = nowX;
+
+
+        if ((tempY - 2) >= 1 && (tempX - 1) >= 1)
+        {
+            print("available_8: " + (tempX - 1) + "_" + (tempY - 2));
+            if (goalX == Math.Abs(tempX - 1) && goalY == (tempY - 2))
+            {
+                returnFlag = true;
+            }
+        }
+
+        else
+        {
+            print("available_8: " + (tempX + 24 - 1) + "_" + (tempY - 2));
+            if (goalX == Math.Abs(tempX + 24 - 1) && goalY == (tempY - 2))
+            {
+                returnFlag = true;
+            }
+        }
+
+
+
+
+
+        print("Your knight Movement is : " + returnFlag);
+        return returnFlag;
+
     }
+
+
+
 
 
     void doMove(Transform x)
