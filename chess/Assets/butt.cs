@@ -452,7 +452,9 @@ public class butt : MonoBehaviour
             if (Math.Abs(x1 - pos1) == Math.Abs(y1 - 1))
             {
                 print("pos1: " + pos1);
-                if (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos1, 1, x1, y1, false))
+                if (chinaWallFlagInFirst)
+                    return BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst);
+                else if (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos1, 1, x1, y1, false))
                     return true;
                 else
                 {
@@ -463,7 +465,10 @@ public class butt : MonoBehaviour
             else if (Math.Abs(x1 - pos2) == Math.Abs(y1 - 1))
             {
                 print("pos2: " + pos2);
-                if (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos2, 1, x1, y1, false))
+
+                if (chinaWallFlagInFirst)
+                    return BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst);
+                else if (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, chinaWallFlagInFirst) && BishipCheckHomesForDieInNormalMove(pos2, 1, x1, y1, false))
                     return true;
                 else
                 {
@@ -483,16 +488,16 @@ public class butt : MonoBehaviour
                 {
                     print("wrong");
                     return false;
-                 }
+                }
 
-                if (Math.Abs(pos1 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1)> Math.Abs(pos2 - x1))
+                if (Math.Abs(pos1 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1) > Math.Abs(pos2 - x1))
                 {
-                    print("there");
+                    print("\n place A \n");
                     return (BishipCheckHomesForDieInNormalMove(x2, y2, pos1, 1, false) && BishipCheckHomesForDieInNormalMove(pos1, y2, x1, y1, true));
                 }
                 else if (Math.Abs(pos2 - x2) == Math.Abs(y1 - 1) && Math.Abs(pos1 - x1) < Math.Abs(pos2 - x1))
                 {
-                    print("here");
+                    print("\n place B \n");
                     return (BishipCheckHomesForDieInNormalMove(x2, y2, pos2, 1, false) && BishipCheckHomesForDieInNormalMove(pos2, y2, x1, y1, true));
                 }
                 else if (pos1 == x2 || pos2 == x2)
@@ -507,7 +512,6 @@ public class butt : MonoBehaviour
                     return false;
                 }
 
-
             }
         }
     }
@@ -519,13 +523,15 @@ public class butt : MonoBehaviour
         if (chinaWallFlag)
         {
 
+
+
             if (now_x < goal_x && now_y > goal_y)
             {
 
 
-                int i = now_x - 1, j = now_y - 1;
 
-                do
+                if (now_x == 1) now_x = 25;
+                for (int i = now_x - 1, j = now_y - 1; ; j--)
                 {
                     condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
                     condition_matrix[i, j] = NO_DIE;
@@ -538,16 +544,17 @@ public class butt : MonoBehaviour
                         i = 24;
 
                     }
+                    if (j == goal_y) return true;
+                    i--;
 
-                    i--; j--;
-
-                } while (i != goal_x - 1 && j != 0);
+                }
                 return true;
             }
-            else if (now_x > goal_x && now_y > goal_y)
+            else if (now_x > goal_x && now_y < goal_y)
             {
+                print("2");/** بررسی شد درست کار میکند**/
                 if (now_x == 24) now_x = 0;
-                for (int i = now_x + 1, j = now_y - 1; i != goal_x + 1 && j != 0; j--)
+                for (int i = now_x + 1, j = now_y + 1; ; j++)
                 {
 
                     condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
@@ -555,23 +562,60 @@ public class butt : MonoBehaviour
                     print("available2: " + i + "__" + j);/***/
                     if (i == 24)
                     {
-                        j--;
+                        j++;
                         print("available2: " + 1 + "__" + j);/***/
-                        i = 0;
+                        i = 1;
                     }
+                    if (j == goal_y) return true;
                     i++;
                 }
                 return true;
             }
-            else if (now_x < goal_x && now_y > goal_y)
+            else if (now_x < goal_x && now_y < goal_y)
             {
+                print("9 " + goal_y); /** بررسی شد درست کار میکند**/
+                for (int i = now_x - 1, j = now_y + 1; ; j++)
+                {
+
+                    condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[i, j] = NO_DIE;
+                    print("available9: " + i + "__" + j);/***/
+                    if (i == 1)
+                    {
+                        j++;
+                        print("available9: " + 24 + "__" + j);/***/
+                        i = 24;
+                    }
+                    if (j == goal_y) return true;
+                    i--;
+                }
+                return true;
                 print("updating soon ...");
                 return true;
             }
-            else if (now_x < goal_x && now_y < goal_y)
+            else if (now_x > goal_x && now_y > goal_y)
             {
-                print("updating soon ...");
+
+                print("8");
+                if (now_x == 24) now_x = 0;
+                for (int i = now_x + 1, j = now_y - 1; j != 0; j--)
+                {
+
+                    condition_matrix[i, j] = "1"; // فعلا 1 میگذاریم
+                    condition_matrix[i, j] = NO_DIE;
+                    print("available8: " + i + "__" + j);/***/
+                    if (i == 24)
+                    {
+                        j--;
+                        print("available8: " + 1 + "__" + j);/***/
+                        i = 1;
+                    }
+                    i++;
+                }
                 return true;
+
+
+                print("updating soon ...");
             }
             else
                 return false;
