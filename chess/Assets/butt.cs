@@ -432,6 +432,10 @@ public class butt : MonoBehaviour
         {
             return BishipCheckHomesForDieInNormalMove(x2, y2, x1, y1, false);
         }
+        else if (Math.Abs(y1 - y2) == Math.Abs(24 % x1 - x2))
+        {
+            return BishipCheckHomesForDieInNormalMove(x2, y2, x1, y1, true);
+        }
         else
         {
             bool chinaWallFlag = false, pos1Flag = false, pos2Flag = false;
@@ -473,7 +477,6 @@ public class butt : MonoBehaviour
                     return true;
                 else
                 {
-                    print("way has a die");
                     return false;
                 }
             }
