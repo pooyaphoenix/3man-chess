@@ -428,6 +428,15 @@ public class butt : MonoBehaviour
         int y2 = Int32.Parse(current_position.Split('_')[1]);
         print(current_position + "->" + goal_position);
 
+
+
+        if ((x1 + y1) % 2 != (x2 + y2) % 2)
+        {
+            print("@3 => wrong");
+            return false;
+        }
+
+
         if (Math.Abs(x1 - x2) == Math.Abs(y1 - y2))
         {
             return BishipCheckHomesForDieInNormalMove(x2, y2, x1, y1, false);
