@@ -102,6 +102,8 @@ public class butt : MonoBehaviour
         /** we have two position (1_2) : first position => 1 , second position => 2 **/
         /** for pawn **/
 
+
+
         if ((x.transform.childCount == 0))
         {
 
@@ -128,7 +130,7 @@ public class butt : MonoBehaviour
             if (whoIs == SOLDIRE_NAME)
             {
 
-                if (checkSoldireMove(goal_position, current_position))
+                if (checkSoldireMove(goal_position, current_position, x.transform.GetChild(1).tag))
                 {
 
 
@@ -141,6 +143,11 @@ public class butt : MonoBehaviour
                     doMove(x);
 
                     conditionText.text = ("SOLDIRE MOVED").ToString();
+                }
+                else
+                {
+                    conditionText.text = ("WRONG").ToString();
+                    conditionText.color = Color.red;
                 }
 
             }
@@ -183,12 +190,19 @@ public class butt : MonoBehaviour
 
             else if (whoIs == KING_NAME)
             {
-                if (Math.Abs(Int32.Parse(x.transform.name.Split('_')[0]) - Int32.Parse(s[0])) % 23 <= 1 && Math.Abs(Int32.Parse(x.transform.name.Split('_')[1]) - Int32.Parse(s[1])) % 23 <= 1)
+                if (checkBishopMove2(goal_position, current_position))
                 {
-                    conditionText.text = ("KING MOVED").ToString();
+
+
+                    conditionText.text = ("King MOVED").ToString();
+                    condition_matrix[x1, y1] = "1";
+                    print(goal_position + ": updated");
+                    condition_matrix[x2, y2] = NO_DIE;
+                    print(current_position + ": updated");
 
                     doMove(x);
 
+                    conditionText.text = ("SOLDIRE MOVED").ToString();
                 }
                 else
                 {
@@ -283,14 +297,26 @@ public class butt : MonoBehaviour
 
 
 
-    Boolean checkSoldireMove(string goal_position, string current)
+    Boolean checkSoldireMove(string goal_position, string current, string tag)
     {
+        print(tag);
         bool soldireReturnFlag = false;
+        bool IamYellow = false, IamRed = false, IamGreen = false;
         int goalX = Int32.Parse(goal_position.Split('_')[0]);
         int goalY = Int32.Parse(goal_position.Split('_')[1]);
         int nowX = Int32.Parse(current.Split('_')[0]);
         int nowY = Int32.Parse(current.Split('_')[1]);
         print(current + " ---> " + goal_position);
+
+        GameObject[] yellow_soldires = GameObject.FindGameObjectsWithTag("yellow_soldire");
+        GameObject[] red_soldires = GameObject.FindGameObjectsWithTag("red_soldire");
+        GameObject[] green_soldires = GameObject.FindGameObjectsWithTag("green_soldire");
+
+        foreach (GameObject gobj in yellow_soldires)
+        {
+
+        }
+
 
         if (nowY == 2)
         {
@@ -1102,6 +1128,9 @@ public class butt : MonoBehaviour
 
     void doMove(Transform x)
     {
+
+
+
         conditionText.color = Color.white;
 
 
