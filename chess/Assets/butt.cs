@@ -334,14 +334,14 @@ public class butt : MonoBehaviour
 
 
 
-        
+
     Boolean checkCastleMove2(string goal_position, string current)
     {
         int x1 = Int32.Parse(goal_position.Split('_')[0]);
         int y1 = Int32.Parse(goal_position.Split('_')[1]);
         int x2 = Int32.Parse(current.Split('_')[0]);
         int y2 = Int32.Parse(current.Split('_')[1]);
-        print(current + "->" + goal_position);
+        print(current + " ---> " + goal_position);
 
         /* 
          * first and second arguments are goal position (x1,y1) => (17_1)
@@ -349,74 +349,98 @@ public class butt : MonoBehaviour
          * */
 
 
-
-        print("17_1:"+condition_matrix[17, 1]);
-        print("17_2:"+condition_matrix[17, 2]);
-        print("17_3:"+condition_matrix[17, 3]);
-
-
-
-
+        bool isQotr = false, isMohit = false;
         if (y1 == y2) // یعنی اگر حرکت در محیط دایره باشد
         {
-            print("mohit");
-            return true;
+            isMohit = true;
         }
-        else if (Math.Abs(x1 - x2) % 12 == 0) // یعنی اگر حرکت در قطر دایره باشد
-        { 
-            print("qotr");
-            if (y1 < y2)
-            {
-                print(y1);
-                for (int i = y1 + 1; i < y2; i++)
-                {
-                    if (condition_matrix[x1, i] == NO_DIE)
-                    {
-                        condition_matrix[x1, y1] = "1";
-                        condition_matrix[x2, y2] = NO_DIE;
-                        return true;
-                    }
-                        
-                    
-                    else
-                        return false;
-                }
-                return false;
-
-            }
-            else if (y2 < y1)
-            {
-                print("y2: "+ y2);
-
-
-
-                for (int i = y2 + 1; i < y1;i++)
-                {
-                    if (condition_matrix[x1, i] == NO_DIE)
-                    {
-                        condition_matrix[x1, y1] = "1"; // فعلا 1 میگذاریم
-                        condition_matrix[x2, y2] = NO_DIE;
-                        return true;
-                    }
-
-                    else
-                        return false;
-                }
-                return false;
-
-            }
-            else
-            {
-                // چک شود اگر خودی است مهره را بزن در غیر اینصورت حرکت باطل است
-                // در مراحل بعدی تکمیل می شود ...
-                return false;
-            }
-
+        if (Math.Abs(x1 - x2) % 12 == 0) // یعنی اگر حرکت در قطر دایره باشد
+        {
+            isQotr = true;
         }
-        else
-            return false;
+
+        return CastleCheckHomesForDie(x2, y2, x1, y1, isQotr, isMohit);
+
     }
 
+
+
+
+    Boolean CastleCheckHomesForDie(int now_x, int now_y, int goal_x, int goal_y, bool isQotr, bool isMohit)
+    {
+        bool returnCastleFlag = false;
+        if (isQotr) // qotr
+        {
+            if (Math.Abs(goal_x - now_x) == 12)
+            {
+                int plus = 1;
+                int i = now_x, j = now_y;
+
+                bool flag6 = true;
+                while (i != goal_x || j != goal_y)
+                {
+                    if (j == 6 && flag6)
+                    {
+                        flag6 = false;
+                        plus = -1;
+
+                        if (goal_x < now_x)
+                            i -= 12;
+                        else
+                            i += 12;
+                        print("Available: " + i + "_" + j);
+                        if (i == goal_x && j == goal_y)
+                            break;
+                    }
+                    if (j >= 24 || j <= -1 || i >= 24 || i <= -1)
+                    {
+                        print("error in code");
+                        return false;
+                    }
+                    j += plus;
+
+
+                    print("Available: " + i + "_" + j);
+
+                }
+                print("Available: " + i + "_" + j);
+
+
+                returnCastleFlag = true;
+            }
+            else if ((goal_x - now_x) == 0)
+            {
+                print("#2");
+                int plus = 1;
+                if (goal_y > now_y)
+                {
+                    plus = 1;
+                }
+                else if (goal_y < now_y) { plus = -1; }
+                else { if (now_x > goal_x) plus = -1; else plus = 1; }
+
+                int i = now_x, j = now_y + plus;
+                while (i != goal_x || j != goal_y)
+                {
+                    print("Available: " + i + "_" + j);
+
+                    if (j >= 24 || j <= -1)
+                    {
+                        print("error in code");
+                        return false;
+                    }
+                    j += plus;
+                }
+                print("Available: " + i + "_" + j);
+
+            }
+            returnCastleFlag = true;
+
+        }
+
+
+        return returnCastleFlag;
+    }
 
 
     Boolean checkBishopMove2(string goal_position, string current_position)
