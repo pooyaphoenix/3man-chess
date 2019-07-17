@@ -439,6 +439,63 @@ public class butt : MonoBehaviour
         }
 
 
+        if (isMohit)
+        {
+            int i = now_x;
+
+
+            while (i != goal_x)
+            {
+
+                if (i == 24)
+                {
+                    i = 1;
+                    print("CLOCKWISE => Available: " + i + "_" + now_y);
+
+                    if (i == goal_x)
+                    {
+                        returnCastleFlag = true; break;
+                    }
+
+                }
+                else
+                    i++;
+
+                print("CLOCKWISE => Available: " + i + "_" + now_y);
+
+                if (i >= 25)
+                {
+                    print("error in code"); return false;
+                }
+            }
+
+            i = now_x;
+            while (i != goal_x)
+            {
+
+                if (i == 1)
+                {
+                    i = 24;
+                    print("ANTI-CLOCKWISE => Available: " + i + "_" + now_y);
+                    if (i == goal_x)
+                    {
+                        returnCastleFlag = true; break;
+                    }
+
+                }
+                else
+                    i--;
+                print("ANTI-CLOCKWISE => Available: " + i + "_" + now_y);
+                if (i >= 25 || i < -1)
+                {
+                    print("error in code"); return false;
+                }
+            }
+
+            returnCastleFlag = true;
+        }
+
+
         return returnCastleFlag;
     }
 
