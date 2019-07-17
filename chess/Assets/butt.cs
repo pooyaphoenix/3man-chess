@@ -128,73 +128,25 @@ public class butt : MonoBehaviour
             if (whoIs == SOLDIRE_NAME)
             {
 
+                if (checkSoldireMove(goal_position, current_position))
+                {
 
 
-                if (((x1 - x2) == 0 || (x1 - x2) == 12))
-                    switch (y1 - y2)/** parent first position - child **/
-                    {
+                    conditionText.text = ("SOLDIRE MOVED").ToString();
+                    condition_matrix[x1, y1] = "1";
+                    print(goal_position + ": updated");
+                    condition_matrix[x2, y2] = NO_DIE;
+                    print(current_position + ": updated");
 
-                        case (1):
-                            conditionText.text = ("PAWN MOVED").ToString();
+                    doMove(x);
 
-                            condition_matrix[x1, y1] = "1";
-                            print(goal_position + ": updated"); print(condition_matrix[x1, y1]);
-                            condition_matrix[x2, y2] = NO_DIE;
-                            print(current_position + ": updated"); print(condition_matrix[x2, y2]);
-                            doMove(x);
+                    conditionText.text = ("SOLDIRE MOVED").ToString();
+                }
 
-                            break;
-                        case (2):
-                            /**if second position be 2, its ok otherwise its wrong movement.... Lets implement this**/
-                            if (Int32.Parse(s[1]) == 2)
-                            {
-                                conditionText.text = ("PAWN MOVED").ToString();
-                                if (condition_matrix[x2, y2 + 1] == "")
-                                {
-                                    condition_matrix[x1, y1] = "1";
-                                    print(goal_position + ": updated");
-                                    condition_matrix[x2, y2] = NO_DIE;
-                                    print(current_position + ": updated");
-                                    doMove(x);
-                                }
-
-                                else
-                                    print("You cant move");// حرکت اول اگر جلوی سرباز مهره خودی یا غیر خودی باشد نمیتواند جلو برود
-
-                            }
-                            else
-                            {
-                                conditionText.text = ("check if first move").ToString();
-                                conditionText.color = Color.red;
-                            }
-
-                            break;
-                        case (0):
-                            conditionText.text = ("PAWN MOVED").ToString();
-                            condition_matrix[x1, y1] = "1";
-                            print(goal_position + ": updated");
-                            condition_matrix[x2, y2] = NO_DIE;
-                            print(current_position + ": updated");
-                            doMove(x);
-                            break;
-                        case (-1):
-                            conditionText.text = ("WRONG").ToString();
-                            // print("-1");
-                            conditionText.color = Color.red;
-                            break;
-                        default:
-                            conditionText.text = ("WRONG").ToString();
-                            conditionText.color = Color.red;
-
-
-                            break;
-
-                    }
             }
             else if (whoIs == CASTLE_NAME)
             {
 
-                //اینجوری تغییر داده شده، اگر دیدی پاک کن =>Int32.Parse(x.transform.name.Split('_')[0]), Int32.Parse(x.transform.name.Split('_')[1]), Int32.Parse(s[0]), Int32.Parse(s[1]))
                 if (checkCastleMove2(x.transform.name, current_position))
                 {
                     conditionText.text = ("CASTLE MOVED").ToString();
@@ -331,6 +283,84 @@ public class butt : MonoBehaviour
 
 
 
+    Boolean checkSoldireMove(string goal_position, string current)
+    {
+        bool soldireReturnFlag = false;
+        int goalX = Int32.Parse(goal_position.Split('_')[0]);
+        int goalY = Int32.Parse(goal_position.Split('_')[1]);
+        int nowX = Int32.Parse(current.Split('_')[0]);
+        int nowY = Int32.Parse(current.Split('_')[1]);
+        print(current + " ---> " + goal_position);
+
+        if (nowY == 2)
+        {
+            if (goalY == 4)
+            {
+                print("available: " + nowX + "_" + nowY + 1);
+                print("available: " + nowX + "_" + goalY);
+                soldireReturnFlag = true;
+            }
+            else if (goalY == 3 && nowX == goalX)
+            {
+                print("available: " + nowX + "_" + goalY);
+                soldireReturnFlag = true;
+            }
+            else if (goalY == 3 && (24 % nowX + 1 == goalX) || (24 % nowX - 1 == goalX))//wrong
+            {
+                // حالت زدن مهره حریف
+            }
+            else
+            {
+                print("Wrong Soldire First Movement");
+                return false;
+            }
+        }
+        else if (nowY == 6 && goalY == 6)
+        {
+            if (nowX + 12 == goalX)
+            {
+                print("available: " + (nowX + 12) + "_" + goalY);
+                soldireReturnFlag = true;
+            }
+            else if (nowX - 12 == goalX)
+            {
+                print("available: " + (nowX - 12) + "_" + goalY);
+                soldireReturnFlag = true;
+            }
+            else if (nowX + 13 == goalX)
+            {
+                //مورب
+            }
+            else if (nowX + 11 == goalX)
+            {
+                // مورب
+            }
+            else if (nowX - 13 == goalX)
+            {
+                // مورب
+            }
+            else if (nowX - 11 == goalX)
+            {
+                // مورب
+            }
+            //x change
+        }
+        else if (nowX == goalX && Math.Abs(nowY - goalY) == 1)
+        {
+            print("available: " + nowX + "_" + goalY);
+            soldireReturnFlag = true;
+        }
+        else
+        {
+            print("Wrong Soldire First Movement");
+            return false;
+        }
+
+
+
+
+        return soldireReturnFlag;
+    }
 
 
 
