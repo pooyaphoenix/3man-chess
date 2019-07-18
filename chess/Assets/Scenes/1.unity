@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -274,6 +274,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -417,6 +418,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -560,6 +562,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -703,6 +706,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -985,6 +989,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -1128,6 +1133,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -1271,6 +1277,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -1415,6 +1422,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -1627,6 +1635,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -1840,6 +1849,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -2049,6 +2059,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -2121,7 +2132,7 @@ GameObject:
   - component: {fileID: 179229175}
   m_Layer: 5
   m_Name: 6_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2193,6 +2204,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -2405,6 +2417,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -2617,6 +2630,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -2898,6 +2912,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3039,7 +3054,7 @@ GameObject:
   - component: {fileID: 275040099}
   m_Layer: 5
   m_Name: 24_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3111,6 +3126,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3329,6 +3345,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3472,6 +3489,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3615,6 +3633,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3827,6 +3846,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -3970,6 +3990,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -4182,6 +4203,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -4326,6 +4348,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -4469,6 +4492,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -4612,6 +4636,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -4825,6 +4850,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5053,6 +5079,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5196,6 +5223,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5339,6 +5367,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5482,6 +5511,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5554,7 +5584,7 @@ GameObject:
   - component: {fileID: 484801995}
   m_Layer: 5
   m_Name: 12_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5626,6 +5656,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5769,6 +5800,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -5923,6 +5955,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -6300,6 +6333,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -6512,6 +6546,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -6653,7 +6688,7 @@ GameObject:
   - component: {fileID: 566235876}
   m_Layer: 5
   m_Name: 18_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6725,6 +6760,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -6937,6 +6973,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7009,7 +7046,7 @@ GameObject:
   - component: {fileID: 628367590}
   m_Layer: 5
   m_Name: 20_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7081,6 +7118,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7190,6 +7228,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7367,6 +7406,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7511,6 +7551,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7654,6 +7695,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -7866,6 +7908,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8009,6 +8052,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8152,6 +8196,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8300,7 +8345,7 @@ GameObject:
   - component: {fileID: 717456553}
   m_Layer: 5
   m_Name: 13_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8372,6 +8417,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8516,6 +8562,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8659,6 +8706,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -8871,6 +8919,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9014,6 +9063,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9155,7 +9205,7 @@ GameObject:
   - component: {fileID: 751359825}
   m_Layer: 5
   m_Name: 16_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9227,6 +9277,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9370,6 +9421,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9513,6 +9565,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9656,6 +9709,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9728,7 +9782,7 @@ GameObject:
   - component: {fileID: 851487734}
   m_Layer: 5
   m_Name: 4_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9800,6 +9854,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -9943,6 +9998,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -10156,6 +10212,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -10299,6 +10356,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -10511,6 +10569,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -10583,7 +10642,7 @@ GameObject:
   - component: {fileID: 938890418}
   m_Layer: 5
   m_Name: 2_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10655,6 +10714,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11006,6 +11066,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11149,6 +11210,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11292,6 +11354,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11364,7 +11427,7 @@ GameObject:
   - component: {fileID: 1023177274}
   m_Layer: 5
   m_Name: 10_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11436,6 +11499,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11580,6 +11644,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11792,6 +11857,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -11935,6 +12001,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12007,7 +12074,7 @@ GameObject:
   - component: {fileID: 1067436525}
   m_Layer: 5
   m_Name: 21_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12079,6 +12146,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12188,6 +12256,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12400,6 +12469,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12506,7 +12576,7 @@ GameObject:
   - component: {fileID: 1130801784}
   m_Layer: 5
   m_Name: 1_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12578,6 +12648,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12721,6 +12792,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -12864,6 +12936,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13007,6 +13080,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13150,6 +13224,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13222,7 +13297,7 @@ GameObject:
   - component: {fileID: 1158778288}
   m_Layer: 5
   m_Name: 15_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13294,6 +13369,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13437,6 +13513,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13580,6 +13657,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -13723,6 +13801,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14142,6 +14221,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14285,6 +14365,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14357,7 +14438,7 @@ GameObject:
   - component: {fileID: 1207833482}
   m_Layer: 5
   m_Name: 19_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14429,6 +14510,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14573,6 +14655,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14645,7 +14728,7 @@ GameObject:
   - component: {fileID: 1262167079}
   m_Layer: 5
   m_Name: 14_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14717,6 +14800,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -14860,6 +14944,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -15003,6 +15088,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -15146,6 +15232,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -15359,6 +15446,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -15516,7 +15604,7 @@ GameObject:
   - component: {fileID: 1334249436}
   m_Layer: 5
   m_Name: 23_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15588,6 +15676,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -15801,6 +15890,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16013,6 +16103,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16156,6 +16247,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16299,6 +16391,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16511,6 +16604,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16654,6 +16748,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16797,6 +16892,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -16940,6 +17036,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -17152,6 +17249,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -17365,6 +17463,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -17509,6 +17608,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -17721,6 +17821,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -18002,6 +18103,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -18457,6 +18559,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -18669,6 +18772,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -18944,6 +19048,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19016,7 +19121,7 @@ GameObject:
   - component: {fileID: 1574639940}
   m_Layer: 5
   m_Name: 9_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19088,6 +19193,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19231,6 +19337,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19375,6 +19482,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19587,6 +19695,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19730,6 +19839,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -19802,7 +19912,7 @@ GameObject:
   - component: {fileID: 1646471157}
   m_Layer: 5
   m_Name: 22_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19874,6 +19984,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20086,6 +20197,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20298,6 +20410,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20441,6 +20554,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20513,7 +20627,7 @@ GameObject:
   - component: {fileID: 1710319013}
   m_Layer: 5
   m_Name: 11_2
-  m_TagString: Untagged
+  m_TagString: red_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20585,6 +20699,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20657,7 +20772,7 @@ GameObject:
   - component: {fileID: 1714826354}
   m_Layer: 5
   m_Name: 5_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20729,6 +20844,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -20870,7 +20986,7 @@ GameObject:
   - component: {fileID: 1725433505}
   m_Layer: 5
   m_Name: 7_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20942,6 +21058,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -21086,6 +21203,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -21229,6 +21347,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -21407,6 +21526,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -21584,6 +21704,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -21794,7 +21915,7 @@ GameObject:
   - component: {fileID: 1807014115}
   m_Layer: 5
   m_Name: 3_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21866,6 +21987,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22010,6 +22132,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22154,6 +22277,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22297,6 +22421,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22440,6 +22565,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22512,7 +22638,7 @@ GameObject:
   - component: {fileID: 1842190023}
   m_Layer: 5
   m_Name: 17_2
-  m_TagString: Untagged
+  m_TagString: yellow_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22584,6 +22710,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22727,6 +22854,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -22871,6 +22999,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -23249,6 +23378,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -23391,7 +23521,7 @@ GameObject:
   - component: {fileID: 1883320629}
   m_Layer: 5
   m_Name: 8_2
-  m_TagString: Untagged
+  m_TagString: green_soldire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23463,6 +23593,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -23606,6 +23737,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -23750,6 +23882,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -23893,6 +24026,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24036,6 +24170,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24179,6 +24314,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24322,6 +24458,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24534,6 +24671,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24677,6 +24815,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -24839,6 +24978,7 @@ MonoBehaviour:
   pastX: {fileID: 0}
   s:
   - 
+  current_position: 
   conditionText: {fileID: 1524086529}
   timeText: {fileID: 329248747}
   rightTurn: {fileID: 962176854}
@@ -24930,6 +25070,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -25074,6 +25215,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -25217,6 +25359,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -25360,6 +25503,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -25503,6 +25647,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -25885,6 +26030,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -26028,6 +26174,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -26240,6 +26387,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
@@ -26383,6 +26531,7 @@ MonoBehaviour:
   nowObject: {fileID: 0}
   pastX: {fileID: 0}
   s: []
+  current_position: 
   conditionText: {fileID: 0}
   timeText: {fileID: 0}
   rightTurn: {fileID: 0}
