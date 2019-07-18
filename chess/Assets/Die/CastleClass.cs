@@ -28,24 +28,26 @@ namespace Assets
             int now_x = Int32.Parse(current_position.Split('_')[0]);
             int now_y = Int32.Parse(current_position.Split('_')[1]);
 
-            /*diametery*/
-            int plus = 1, temp_i = now_x;
-            for (int i = now_x, j = now_y + 1; ; j += plus)
+            /*diametery down to up */
+            int plus = 1, temp_i = now_x;bool first6 = false;
+            int j = now_y; if (j < 6) j++; else first6 = true;
+
+            for (int i = now_x; ; j += plus)
             {
 
 
                 if (j == 6)
                 {
-                    if (Board.condition_matrix[i, j] == DieClass.NO_DIE)
+                    if (Board.condition_matrix[i, j] == DieClass.NO_DIE && !first6)
                         arr[counter++] = i + "_" + j;
 
-                    else
+                    else if(!first6)
                         break;
                     /**/
-                    if (i != 12) temp_i = (i + 12) % 24; else temp_i = 24;
+                    if (i != 12) { temp_i = (now_x + 12) % 24; } else temp_i = 24;
                     /**/
                     if (Board.condition_matrix[temp_i, j] == DieClass.NO_DIE)
-                        arr[counter++] = i + "_" + j;
+                        arr[counter++] = temp_i + "_" + j;
 
                     else
                         break;
@@ -54,7 +56,7 @@ namespace Assets
 
                 }
                 else if (Board.condition_matrix[temp_i, j] == DieClass.NO_DIE)
-                    arr[counter++] = i + "_" + j;
+                    arr[counter++] = temp_i + "_" + j;
                 else
                     break;
 
@@ -64,6 +66,31 @@ namespace Assets
 
 
             }
+
+
+
+            /*diametery up to down */
+            plus = -1; temp_i = now_x; 
+            j = now_y;
+
+            if (j > 1 && j <= 6)
+            {
+                j--;
+
+                for (int i = now_x; j != 0; j += plus)
+                {
+
+                    if (Board.condition_matrix[now_x, j] == DieClass.NO_DIE)
+                        arr[counter++] = now_x + "_" + j;
+                    else
+                        break;
+
+
+                    if (i >= 25 || j >= 7 || i <= 0 || j <= 0)
+                        break;
+                }
+            }
+
 
             /*clockwise*/
             int adder = now_x; if (adder == 24) adder = 1; else adder = now_x + 1;
@@ -123,6 +150,15 @@ namespace Assets
                     break;
             }
             return arr;
+        }
+
+        public Boolean checkKnightMovementValidity(string goal_position, string current_position)
+        {
+            string[] arr = showCastleMovementSuggestion(current_position);
+            if (arr.Contains(goal_position))
+                return true;
+            else
+                return false;         
         }
     }
 }

@@ -160,9 +160,26 @@ public class butt : MonoBehaviour
 
 
                     conditionText.text = ("SOLDIRE MOVED").ToString();
+                    string temp_current_position = current_position;
+                    try
+                    {
+                        if (doMove(x))
+                        {
+                            Board.condition_matrix[Int32.Parse(goal_position.Split('_')[0]), Int32.Parse(goal_position.Split('_')[1])] = DieClass.SET_DIE;
+                            print(goal_position.Split('_')[0] + "_" + goal_position.Split('_')[1] + " Set Die");
+                            Board.condition_matrix[Int32.Parse(temp_current_position.Split('_')[0]), Int32.Parse(temp_current_position.Split('_')[1])] = DieClass.NO_DIE;
+                            print(temp_current_position.Split('_')[0] + "_" + temp_current_position.Split('_')[1] + " Reset Die");
+                        }
+                        else
+                        {
+                            print("(200) Trouble ...");
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        print("(201) Trouble ...");
 
-                    doMove(x);
-
+                    }
                     conditionText.text = ("SOLDIRE MOVED").ToString();
                 }
                 else
@@ -175,11 +192,29 @@ public class butt : MonoBehaviour
             else if (whoIs == DieClass.CASTLE_NAME)
             {
 
-                if (checkCastleMove2(x.transform.name,current_position))
+                if (myCastle.checkKnightMovementValidity(goal_position,current_position))
                 {
+                    string temp_current_position = current_position;
                     conditionText.text = ("CASTLE MOVED").ToString();
+                    try
+                    {
+                        if(doMove(x))
+                        {
+                            Board.condition_matrix[Int32.Parse(goal_position.Split('_')[0]), Int32.Parse(goal_position.Split('_')[1])] = DieClass.SET_DIE;
+                            print(goal_position.Split('_')[0] + "_" + goal_position.Split('_')[1] + "Set Die");
+                            Board.condition_matrix[Int32.Parse(temp_current_position.Split('_')[0]), Int32.Parse(temp_current_position.Split('_')[1])] = DieClass.NO_DIE;
+                            print(temp_current_position.Split('_')[0] + "_" + temp_current_position.Split('_')[1] + "No Die");
+                        }
+                        else
+                        {
+                            print("(100) Trouble ...");
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        print("(101) Trouble ...");
 
-                    doMove(x);
+                    }
 
                 }
                 else
