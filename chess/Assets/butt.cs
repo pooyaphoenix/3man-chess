@@ -94,6 +94,8 @@ public class butt : MonoBehaviour
         myCastle = new CastleClass(goal_position, current_position);
         myBishop = new BishopClass(goal_position, current_position);*/
         myKnight = new KnightClass();
+        myCastle = new CastleClass();
+
 
 
 
@@ -115,7 +117,16 @@ public class butt : MonoBehaviour
                 foreach (string c in a)
                 {
                     print(c);
-                    // Color the Homes
+                    // Color the Homes for knight
+                }
+            }else if(whoIs == DieClass.CASTLE_NAME)
+            {
+                print("here");
+                String[] arr = myCastle.showCastleMovementSuggestion(current_position);
+                foreach (string c in arr)
+                {
+                    print(c);
+                    // Color the Homes for castle
                 }
             }
         }
@@ -183,11 +194,17 @@ public class butt : MonoBehaviour
                 
                 if (myKnight.checkKnightMovementValidity(goal_position,current_position))
                 {
+
+                    string temp_current_position;
+                    temp_current_position = current_position;
+
                     conditionText.text = ("KNIGHT MOVED").ToString();
-                    if(doMove(x))
+                    if (doMove(x))
                     {
                         Board.condition_matrix[Int32.Parse(goal_position.Split('_')[0]), Int32.Parse(goal_position.Split('_')[1])] = DieClass.SET_DIE;
-                        Board.condition_matrix[Int32.Parse(current_position.Split('_')[0]), Int32.Parse(current_position.Split('_')[1])] = DieClass.NO_DIE;
+                        print(goal_position.Split('_')[0] + "_" + goal_position.Split('_')[1] + "Set Die");
+                        Board.condition_matrix[Int32.Parse(temp_current_position.Split('_')[0]), Int32.Parse(temp_current_position.Split('_')[1])] = DieClass.NO_DIE;
+                        print(temp_current_position.Split('_')[0] + "_" + temp_current_position.Split('_')[1] + "No Die");
 
                     }
 
@@ -548,10 +565,6 @@ public class butt : MonoBehaviour
 
         return returnCastleFlag;
     }
-
-
-
-
 
 
 
