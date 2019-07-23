@@ -8,25 +8,62 @@ namespace Assets.Die
     class Board
     {
 
+        
+             public static string[,] condition_matrix = new string[25, 7] {
+              {"","","","","","",""},//0
 
+              {"",DieClass.LEFT_CASTLE_GREEN,DieClass.SOLDIER_GREEN_1,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//1
+              {"",DieClass.LEFT_KNIGHT_GREEN,DieClass.SOLDIER_GREEN_2,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//2
+              {"",DieClass.LEFT_BISHOP_GREEN,DieClass.SOLDIER_GREEN_3,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//3
+              {"",DieClass.KING_GREEN,DieClass.SOLDIER_GREEN_4,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//4
+              {"",DieClass.QUEEN_GREEN,DieClass.SOLDIER_GREEN_5,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//5
+              {"",DieClass.RIGHT_BISHOP_GREEN,DieClass.SOLDIER_GREEN_6,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//6
+              {"",DieClass.RIGHT_KNIGHT_GREEN,DieClass.SOLDIER_GREEN_7,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//7
+              {"",DieClass.RIGHT_CASTLE_GREEN,DieClass.SOLDIER_GREEN_8,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//8
+
+              {"",DieClass.LEFT_CASTLE_RED,DieClass.SOLDIER_RED_1,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//9
+              {"",DieClass.RIGHT_KNIGHT_RED,DieClass.SOLDIER_RED_2,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//10
+              {"",DieClass.LEFT_BISHOP_RED,DieClass.SOLDIER_RED_3,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//11
+              {"",DieClass.RIGHT_BISHOP_RED,DieClass.SOLDIER_RED_4,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//12
+              {"",DieClass.KING_GREEN,DieClass.SOLDIER_RED_5,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//13
+              {"",DieClass.QUEEN_RED,DieClass.SOLDIER_RED_6,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//14
+              {"",DieClass.RIGHT_KNIGHT_RED,DieClass.SOLDIER_RED_7,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//15
+              {"",DieClass.RIGHT_CASTLE_RED,DieClass.SOLDIER_RED_8,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//16
+
+              {"",DieClass.LEFT_CASTLE_YELLO,DieClass.SOLDIER_YELLOW_1,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//17
+              {"",DieClass.RIGHT_KNIGHT_YELLOW,DieClass.SOLDIER_YELLOW_2,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//18
+              {"",DieClass.LEFT_BISHOP_YELLOW,DieClass.SOLDIER_YELLOW_3,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//19
+              {"",DieClass.RIGHT_BISHOP_YELLOW,DieClass.SOLDIER_YELLOW_4,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//20
+              {"",DieClass.KING_YELLOW,DieClass.SOLDIER_YELLOW_5,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//21
+              {"",DieClass.QUEEN_YELLOW,DieClass.SOLDIER_YELLOW_6,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//22
+              {"",DieClass.RIGHT_KNIGHT_YELLOW,DieClass.SOLDIER_YELLOW_7,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//23
+              {"",DieClass.RIGHT_CASTLE_YELLOW,DieClass.SOLDIER_YELLOW_8,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE}//24
+          };
+      /**/
+
+
+            /*
         public static string[,] condition_matrix = new string[25, 7] {
         {"","","","","","",""},//0
 
-        {"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//1,2
-        {"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//3
-        {"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//5
-        {"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.GREEN_DIE,DieClass.GREEN_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//7
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//1,2
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//3
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//5
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//7
 
-        {"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//9
-        {"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//11
-        {"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//13
-        {"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.RED_DIE,DieClass.RED_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//15
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//9
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//11
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//13
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//15
 
-        {"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//17
-        {"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//19
-        {"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },{"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//21
-        {"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.YELLOW_DIE,DieClass.YELLOW_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE}//23
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//17
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},//19
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE },//21
+        {"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE},{"",DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE,DieClass.NO_DIE}//23
     };
+        /***/
+
+
 
         public static string[,] board_Matrix = new string[24, 6]
         {

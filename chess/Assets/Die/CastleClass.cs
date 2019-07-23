@@ -8,10 +8,10 @@ namespace Assets
 {
     class CastleClass
     {
-        private string goal_possition, current_position;
-        public CastleClass()
+        private string goal_possition, current_position,color;
+        public CastleClass(string color)
         {
-
+            this.color = color;
         }
         public CastleClass(string goal_possition, string current_position)
         {
@@ -20,7 +20,7 @@ namespace Assets
         }
 
 
-
+        
         public String[] showCastleMovementSuggestion(string current_position)
         {
             string[] arr = new string[58];
@@ -40,25 +40,31 @@ namespace Assets
                 {
                     if (Board.condition_matrix[i, j] == DieClass.NO_DIE && !first6)
                         arr[counter++] = i + "_" + j;
-
-                    else if(!first6)
+                    // check this
+                    else if (DieClass.colorCheck(i, now_y) == color && !first6) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = i + "_" + now_y; break; } //home has die but different color
                     /**/
                     if (i != 12) { temp_i = (now_x + 12) % 24; } else temp_i = 24;
                     /**/
                     if (Board.condition_matrix[temp_i, j] == DieClass.NO_DIE)
                         arr[counter++] = temp_i + "_" + j;
 
-                    else
+                    else if (DieClass.colorCheck(temp_i, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = temp_i + "_" + now_y; break; } //home has die but different color
 
                     plus = -1;
 
                 }
                 else if (Board.condition_matrix[temp_i, j] == DieClass.NO_DIE)
                     arr[counter++] = temp_i + "_" + j;
-                else
+                else if (DieClass.colorCheck(temp_i, now_y) == color) //home has die but same color
                     break;
+                else
+                { arr[counter++] = temp_i + "_" + now_y; break; } //home has die but different color
 
 
                 if (i >= 25 || j >= 7 || i <= 0 || j <= 0)
@@ -82,8 +88,10 @@ namespace Assets
 
                     if (Board.condition_matrix[now_x, j] == DieClass.NO_DIE)
                         arr[counter++] = now_x + "_" + j;
-                    else
+                    else if (DieClass.colorCheck(now_x, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = now_x + "_" + now_y; break; } //home has die but different color
 
 
                     if (i >= 25 || j >= 7 || i <= 0 || j <= 0)
@@ -100,22 +108,26 @@ namespace Assets
                 {
                     if (Board.condition_matrix[adder, now_y] == DieClass.NO_DIE)
                         arr[counter++] = adder + "_" + now_y;
-
-                    else
+                    else if (DieClass.colorCheck(adder, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = adder + "_" + now_y; break; } //home has die but different color
 
                     adder = 1;
                     if (Board.condition_matrix[adder, now_y] == DieClass.NO_DIE && adder != now_x)
                         arr[counter++] = adder + "_" + now_y;
-
-                    else
+                    else if (DieClass.colorCheck(adder, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = adder + "_" + now_y; break; } //home has die but different color
+
                 }
                 else if (Board.condition_matrix[adder, now_y] == DieClass.NO_DIE && adder != now_x)
                     arr[counter++] = adder + "_" + now_y;
-
-                else
+                else if (DieClass.colorCheck(adder, now_y) == color) //home has die but same color
                     break;
+                else
+                { arr[counter++] = adder + "_" + now_y; break; } //home has die but different color
 
                 if (adder >= 25 || adder <= 0 || adder == now_x)
                     break;
@@ -129,22 +141,26 @@ namespace Assets
                 {
                     if (Board.condition_matrix[subber, now_y] == DieClass.NO_DIE)
                         arr[counter++] = subber + "_" + now_y;
-
-                    else
+                    else if (DieClass.colorCheck(subber, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = subber + "_" + now_y; break; } //home has die but different color
 
                     subber = 24;
                     if (Board.condition_matrix[subber, now_y] == DieClass.NO_DIE && subber != now_x)
                         arr[counter++] = subber + "_" + now_y;
-
-                    else
+                    else if (DieClass.colorCheck(subber, now_y) == color) //home has die but same color
                         break;
+                    else
+                    { arr[counter++] = subber + "_" + now_y; break; } //home has die but different color
+
                 }
                 else if (Board.condition_matrix[subber, now_y] == DieClass.NO_DIE && subber != now_x)
                     arr[counter++] = subber + "_" + now_y;
-
-                else
+                else if (DieClass.colorCheck(subber, now_y) == color) //home has die but same color
                     break;
+                else
+                { arr[counter++] = subber + "_" + now_y; break; } //home has die but different color
 
                 if (subber >= 25 || subber <= 0 || subber == now_x)
                     break;
@@ -152,7 +168,7 @@ namespace Assets
             return arr;
         }
 
-        public Boolean checkKnightMovementValidity(string goal_position, string current_position)
+        public Boolean checkCastleMovementValidity(string goal_position, string current_position)
         {
             string[] arr = showCastleMovementSuggestion(current_position);
             if (arr.Contains(goal_position))
@@ -160,5 +176,7 @@ namespace Assets
             else
                 return false;         
         }
+
+
     }
 }

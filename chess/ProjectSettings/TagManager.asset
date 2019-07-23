@@ -7,6 +7,8 @@ TagManager:
   - green_soldire
   - red_soldire
   - yellow_soldire
+  - darkIndex
+  - homes
   layers:
   - Default
   - TransparentFX
